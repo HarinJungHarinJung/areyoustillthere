@@ -23,17 +23,22 @@ body {
   font-size: 10pt;
   text-align: center;
   margin-top: 20px;
-  line-height: 15pt;
-  background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet); /* Standard syntax (must be last) */
-  cursor: wait;}
+  line-height: 16pt;
+  background-image: linear-gradient(#ffb3ff, SlateBlue, #99FFFF, PaleGreen, #FFFF66, lightyellow, Crimson); /* Standard syntax (must be last) */
+  cursor: wait;
+  padding-left: 100px;
+  padding-right: 100px;
 }
+
+/* linear-gradient(black, SlateBlue, #99FFFF, PaleGreen, #FFFF66, lightyellow, Crimson); */
 
 h1 {
   color: #000d1a;
   font-family: monospace;
   font-size: 10pt;
   text-align: left;
-  line-height: 15pt;
+  line-height: 16pt;
+
 }
 
 a {
@@ -46,9 +51,9 @@ a {
   font-family: monospace;
   font-size: 10pt;
   text-align: left;
-  line-height: 15pt;
-  margin-left: 10px;
+  line-height: 16pt;
   cursor: grabbing;
+  width: 400px;
 }
 
 .center_left {
@@ -56,8 +61,17 @@ a {
   font-family: monospace;
   font-size: 10pt;
   text-align: left;
-  line-height: 15pt;
-  margin-left: 600px;
+  line-height: 16pt;
+  margin-left: 10%;
+  cursor: grabbing;
+}
+
+.left_white {
+  color: lightgrey;
+  font-family: monospace;
+  font-size: 10pt;
+  text-align: left;
+  line-height: 16pt;
   cursor: grabbing;
 }
 
@@ -75,10 +89,10 @@ a {
 .sticky_2 {
   color: #000d1a;
   font-family: monospace;
-  font-size: 10pt;
+  font-size: 50pt;
   position: fixed;
   left: 20pt;
-  bottom: 20pt;
+  bottom: 35pt;
   width: 100%;
   text-align: left;
 }
@@ -88,14 +102,14 @@ a {
   font-family: monospace;
   font-size: 10pt;
   text-align: left;
-  line-height: 15pt;
+  line-height: 16pt;
   background-color: transparent;
   border: 0pt;
 }
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display:inline-block;
 }
 
 .dropdown-content {
@@ -103,11 +117,12 @@ a {
   font-family: monospace;
   font-size: 10pt;
   text-align: left;
-  line-height: 15pt;
+  line-height: 16pt;
   display: none;
   position: absolute;
   background-color: none;
   width: 800px;
+  left: -35%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -160,15 +175,15 @@ display: block;
   position: relative;
   width: 100px;
   height:100px;
-  font-size: 10pt;
+  font-size: 12pt;
 }
 .estrellas span {
   position: absolute;
   right: 0px;
   bottom: 0;
-  width: 10px;
+  width: 12px;
   height: 70px;
-  line-height: 10px; /* height*2 - font-size */
+  line-height: 11px; /* height*2 - font-size */
   text-align: center;
   transform-origin: top right;
 }
@@ -205,12 +220,12 @@ display: block;
 
 /* Reverse mode */
 .inverso {
-  font-weight: normal;
+  font-weight: bold;
   font-family: courier;
 }
 
 .inverso span {
-  line-height: 10px;
+  line-height: 11px;
   transform-origin: bottom right;
   border: 0px solid red; /* Only for seeing trick */
 }
@@ -218,7 +233,7 @@ display: block;
 </style>
 
 <script>
-setInterval( function(){alert("Are you still there? 👀"); },180000);
+setInterval( function(){alert("Are you still there? 👀"); },210000);
 </script>
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -252,7 +267,7 @@ setInterval( function(){alert("Are you still there? 👀"); },180000);
     </div>
   </div>
 
-<div class="sticky_2"><a href="#down">💥 x 📠</a></div>
+<div class="sticky_2"><a href="#down">🖇</a></div>
 
 
   <div class="estrellas inverso"><div class="sticky">
@@ -260,25 +275,11 @@ setInterval( function(){alert("Are you still there? 👀"); },180000);
   <span><a href="#1">1</a></span>
   <span><a href="#2">2</a></span>
   <span><a href="#3">3</a></span>
-  <span><a href="#down">↑</a></span>
+  <span><a href="mailto:harinjg@gmail.com" target="blank">📞</a></span>
   <span><a href="#4">4</a></span>
   <span><a href="#5">5</a></span>
   <span><a href="#6">6</a></span>
 </div></div>
-
-<!-- navigator
-  <div class="sticky"><div class="a">
-  <a href="#1">1</a><br>↓<br>
-  <a href="#2">2</a><br>↓<br>
-  <a href="#3">3</a><br>↓<br>
-  <a href="#4">4</a><br>↓<br>
-  <a href="#5">5</a><br>↓<br>
-  <a href="#6">6</a><br>
-</div></div>
--->
-
-
-  <h1></h1>
   <script>
   /* When the user clicks on the button,
   toggle between hiding and showing the dropdown content */
@@ -302,24 +303,27 @@ setInterval( function(){alert("Are you still there? 👀"); },180000);
   </script>
 
 <h1></h1>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>↓<br>Scrolling to teleport
-    <table style="width:100%; height: 60000pt">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>↓<br>Scroll to teleport
+    <table style="width:100%; height: 70000pt">
       <tr>
-        <td><strong><a name="1">Teleporting Step 1. measure your constituent atoms.</strong></a><br><br>
+        <td><a name="1">&nbsp;</a><br><br><strong>Teleporting Step 1. <br>Measure your constituent atoms.</strong><br><br>
       📍<br>
-        <div class="left">This may be the first step of teleportation.
-        As tepleportation is sending information of my atoms,
-        I have to measure my physical body info. When I fill sign-up sheet in a new website, there is <div class="tooltip">some personal questions and answers.🖼️<span class="tooltiptext"><img src="securityquestion.png" alt="image"></a></span></div>
+        <div class="left">This is the first step of teleportation. As tepleportation is sending information of my atoms, I have to measure my physical body info. When I fill sign-up sheet in a new website, there is <div class="tooltip">some personal questions and answers.🖼️<span class="tooltiptext"><img src="securityquestion.png" alt="image"></a></span></div>
          It exists incase I forget your password in the future, the answers identify it’s real "me",
         not hackers or aliens. I found this would be the similar step with teleportation to confirm real me. Sometimes my memory is just rusty though...<br><br>
       </div>
       📍<br>
-      My 🏠 address is... 71.192.164.152, no matter where I am. <a href="https://www.google.com/search?q=ip+address&oq=ip&aqs=chrome.0.69i59j69i57j69i60l2j69i59l2.960j0j7&sourceid=chrome&ie=UTF-8" target="_blank" style="text-decoration: underline">Where is yours?</a><br><br>
-      📍<br>
-      <div class="tooltip">Netflix_keep_checking_me_existing.png🖼️<span class="tooltiptext"><img src="areyoustillwatching_2.jpg" width="600px" alt="image"></a></span></div>
+      <div class="left">The influx of different messages that we receive every time we are online does not overload our working memory alone. This makes it difficult for the frontal lobe to focus on only one object. The process of strengthening memory cannot begin at all. And thanks to the plasticity of neural channels, the more we use the Internet, the more our brains are trained to become more distracted, which processes information very quickly and efficiently, but it is impossible to concentrate continuously. This helps us understand why many of us find it hard to focus on one thing even when we're away from the computer.
+      </div>
+        </td>
+        <td></td>
+        <td></td>
       </tr>
+
       <tr>
-        <td><strong><a name="2">Teleporting Step 2: Set the destination point.</strong></a><br><br>
+        <td></td>
+        <td></td>
+        <td><a name="2">&nbsp;</a><br><br><strong>Teleporting Step 2: <br>Set the destination point.</strong><br><br>
           📍<br>
           <div class="left">I know that personality changes a little bit depends on which language I use. But how do I feel about "emoji"? Does "emoji" also change my ego like other language? Honestly, I've considered emoji as spices of my texting so far. But I now admit that emoji has taken a huge part of communication. It's simple, straight-forward and powerful... I recently read a emoji poem by <a href="https://www.stephanieberger.com/" style="text-decoration: underline" target="blank">Stephanie Berger🔗</a>.
           <br><br></div>
@@ -370,52 +374,67 @@ setInterval( function(){alert("Are you still there? 👀"); },180000);
         </div><br>
         </td>
       </tr>
+
       <tr>
-        <td><strong><a name="3">Teleporting Step 3: dissociate yourself & make a map of dissociated atoms.</strong></a><br><br>
+        <td></td>
+        <td><a name="3">&nbsp;</a><br><br><strong>Teleporting Step 3: <br>Dissociate yourself & make a map of dissociated atoms.</strong><br><br>
           📍<br>
           <div class="left"><i>"There are two kinds of knowledge. One is what I know the knowledge directly, and the other is that I know where the information is." Samuel Johnson, 1775</i><br>
           I get accessed to the Internet to an unprecedented library of information in terms of its size and scope. The Internet allows us to conveniently sort through this library so that we can find something that is not exactly what we are looking for but at least meets our immediate purpose. What the Internet is shrinking is the first kind of knowledge Johnson has said. The ability to know ourselves deeply, the ability to build a rich and unusual series of associations that allow original knowledge to rise within our thoughts.
           Perhaps Samuel Johnson is right. But Johnson's second knowledge may be developing more because of the Internet. I have benefited a lot since last year thanks to the search function of Yale Digital Library and the library link system. <div class="tooltip">"Borrow Direct"🖼️<span class="tooltiptext"><img src="borrowdirect.gif" alt="image"></a></span></div> is a feature that allows users to check whether or not they have any material in the Yale Library and receive it by courier service from other linked universities in the United States. Even if I don't get the data I want right away, it's very useful to know where the data is now. Sounds like a function that fits Johnson's earlier statement of "right away purpose." Perhaps while the first knowledge is being "reduced," the second knowledge is becoming more and more "expansionary."
         </div>
-          📍<br>
-          <div class="left">How do I map some infos when using the Internet? I sometimes watch at video on YouTube. It's video that I watch to get useful information for me, but when I finish watching the video, I often dont't remember what it's about, or disapear soon... I just thought that my poor concentration. But I was told that watching at video over the Internet makes sympathetic nerves not activated. So, my brain gets numb while watching the lecture. That's because the video only provides information "one-way" and I just hear the sound. After watching the video, I don't map what I saw with direct or indirect actions such as searching for books about the contents. So the contents can't come inside me, just wander around me and go...</div>
           <br>📍<br>
-          <div class="left">The influx of different messages that we receive every time we are online does not overload our working memory alone. This makes it difficult for the frontal lobe to focus on only one object. The process of strengthening memory cannot begin at all. And thanks to the plasticity of neural channels, the more we use the Internet, the more our brains are trained to become more distracted, which processes information very quickly and efficiently, but it is impossible to concentrate continuously. This helps us understand why many of us find it hard to focus on one thing even when we're away from the computer.
+          <div class="left">How do I map some infos when using the Internet? I sometimes watch at video on YouTube. It's video that I watch to get useful information for me, but when I finish watching the video, I often dont't remember what it's about, or disapear soon... I just thought that my poor concentration. But I was told that watching at video over the Internet makes sympathetic nerves not activated. So, my brain gets numb while watching the lecture. That's because the video only provides information "one-way" and I just hear the sound. After watching the video, I don't map what I saw with direct or indirect actions such as searching for books about the contents. So the contents can't come inside me, just wander around me and go...</div>
         </div>
         </td>
+        <td></td>
       </tr>
-      <tr>
-        <td><strong><a name="4">Teleporting Step 4: send the information to the chosen destination point.</strong></a><br><br>
-          📍<br>
-          <div class="left">Socrates may have been mistaken about the effects of writing, but he was wise to warn us against taking memory’s treasures for granted. His prophecy of a tool that would “implant forgetfulness” in the mind, providing “a recipe not for memory, but for reminder,” has gained new currency with the coming of the Web. The prediction may turn out to have been merely premature, not wrong. Of all the sacrifices we make when we devote ourselves to the Internet as our universal medium, the greatest is likely to be the wealth of connections within our own minds. It’s true that the Web is itself a network of connections, but the hyperlinks that associate bits of online data are nothing like the synapses in our brain. The Web’s links are just addresses, simple software tags that direct a browser to load another discrete page of information. They have none of the organic richness or sensitivity of our synapses. The brain’s connections, writes
-Ari Schulman, “don’t merely provide access to a memory; they in many ways constitute memories.” The Webs connections are not our connections—and no matter how many hours we spend searching and surfing, they will never become our connections. When we outsource our memory to a machine, we also outsource a very important part of our intellect and even our identity. William James, in concluding his 1892 lecture on memory, said, “The connections is the thinking.” To which could be added, “The connecting is the self.” </div><br><br>
 
+      <tr>
+        <td></td>
+        <td></td>
+        <td><a name="4">&nbsp;</a><br><br><strong>Teleporting Step 4:<br>Send the information to the chosen destination point.</strong><br><br>
+          📍<br>
+          <div class="left">Socrates may have been mistaken about the effects of writing, but he was wise to warn us against taking memory’s treasures for granted. His prophecy of a tool that would “implant forgetfulness” in the mind, providing “a recipe not for memory, but for reminder,” has gained new currency with the coming of the Web. The prediction may turn out to have been merely premature, not wrong. Of all the sacrifices we make when we devote ourselves to the Internet as our universal medium, the greatest is likely to be the wealth of connections within our own minds. It’s true that the Web is itself a network of connections, but the hyperlinks that associate bits of online data are nothing like the synapses in our brain. The Web’s links are just addresses, simple software tags that direct a browser to load another discrete page of information. They have none of the organic richness or sensitivity of our synapses. The brain’s connections, writes Ari Schulman, “don’t merely provide access to a memory; they in many ways constitute memories.” The Webs connections are not our connections—and no matter how many hours we spend searching and surfing, they will never become our connections. When we outsource our memory to a machine, we also outsource a very important part of our intellect and even our identity. William James, in concluding his 1892 lecture on memory, said, “The connections is the thinking.” To which could be added, “The connecting is the self.” <br><br>'THE SHALLOWS', Nicholas Carr, <br>W. W. Norton & Company, Inc, 2010, pp195. </div><br><br>
         </td>
       </tr>
+
       <tr>
-        <td><div style="color: #b3b3ff"><strong><a name="5">Teleporting Step 5: re-associate yourself into your bodily form.</strong></a><br><br>
+        <td><a name="5">&nbsp;</a><br><br><strong>Teleporting Step 5: <br>Re-associate yourself into your bodily form.</strong><br><br>
           📍<br>
-          Have you ever had <div class="tooltip">a Chat Roulette🖼️<span class="tooltiptext"><img src="iTxPW.jpg" width="300px" alt="image"></a></span></div>? Chat Roulette is a service that randomly selects chat partners when accessing a site that provides chat services. So, it is not used to meet a particular person and talk to them, but rather to relieve boredom while chatting with an unspecified stranger. It seems to be a place where many people speak of themselves differently from real sex, and are likely to behave differently from their actual personalities, because they cannot tell what age or gender they will meet. This happens frequently on SNS such as Twitter as well as random chatting. It has become very difficult to grasp a person's personality based on what he or she posted on Twitter. I have a friend who posts on Facebook very often, and his real personality is very quiet. There are also the opposite. How would a person's personality shown as a chat window on the Internet, "back-stage personality" be different from his real personality, "front-stage personality"? Maybe they're turning themselves into content and "running" online. Are you making a reality show that makes you a star and reflects their real lives? What can we know from them? What do you not know? What should I believe? How should we react?<br>
-          <br>
+          <div class="left">Have you ever had <div class="tooltip">a Chat Roulette🖼️<span class="tooltiptext"><img src="iTxPW.jpg" width="300px" alt="image"></a></span></div>? Chat Roulette is a service that randomly selects chat partners when accessing a site that provides chat services. So, it is not used to meet a particular person and talk to them, but rather to relieve boredom while chatting with an unspecified stranger. It seems to be a place where many people speak of themselves differently from real sex, and are likely to behave differently from their actual personalities, because they cannot tell what age or gender they will meet. This happens frequently on SNS such as Twitter as well as random chatting. It has become very difficult to grasp a person's personality based on what he or she posted on Twitter. I have a friend who posts on Facebook very often, and his real personality is very quiet. There are also the opposite. How would a person's personality shown as a chat window on the Internet, "back-stage personality" be different from his real personality, "front-stage personality"? Maybe they're turning themselves into content and "running" online. Are you making a reality show that makes you a star and reflects their real lives? What can we know from them? What do you not know? What should I believe? How should we react?<br>
+        </div><br>
           📍<br>
-          <img src="failreassociate.png" width="800px" alt="image"></a><br>fail_loading_website.png<br>
+          <div class="tooltip">fail_loading_website.png🖼️<span class="tooltiptext"><img src="failreassociate.png" width="900px" alt="image"></a></span></div><br>
         </td>
+        <td></td>
+        <td></td>
+
       <tr>
-        <td><div style="color: #d9b3ff"><strong><a name="6">Teleportating Step 6: Complete!</strong></a><br>
-          📍<br>
-           <br>
-          <br>
-</div>
+        <td></td>
+        <td><a name="6">&nbsp;</a><br><br><strong>Teleportating Step 6: <br>Complete!</strong><br>
+          <br>📍<br>
+          <div class="tooltip">Are you still there?🖼️<span class="tooltiptext"><img src="areyoustillwatching_2.jpg" width="700px" alt="image"></a></span></div></div>
+          <br></div>
         </td>
+        <td></td>
       </tr>
+
       <tr>
         <td>
 </td>
       </tr>
     </table>
-    <p><a name="down"><p style="text-align: center"><img src="pp_1.jpg" width="500px" background-color="none"; alt="image"> Related Project: The Truth of Teleportation, The Truth of Fax (+)</a></p>
+    <p><p style="text-align:center"><strong><a name="down">🖇<br>Related Project: <br>'The Truth of Teleportation, The Truth of Fax', <br>edited and designed by Harin Jung, New Haven, 2018.</strong></a><br><br>
+      This book is about the process of teleportation and fax. <br>
+      These two processes and principles shows how same and different they are. <br>
+      The key is that they don't move themselves, but sending their information to the destination point. <br>
+      You might be connected this concept to this website, and teleport the internet world...<br><br>
+      <img src="190427_TheTruthAboutTeleportationAndFax.gif" width="850px" background-color="none"; alt="image"></p>
   <!--
   <p><a name="down"><p style="text-align: center"><img src="timeserver.png" width="250px" background-color="none"; alt="image"></a><br><i>“The timeserver gave you time off from life-if you had a place to go!”<br>‘TIMESERVER’ by unknown artist.</i></a></a><br><br></p>
 -->
+<br><br><br>
+Copyright © Harin Jung 2019
   </body>
 </html>
